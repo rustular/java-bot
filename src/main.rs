@@ -1,3 +1,6 @@
+mod env;
+
 fn main() {
-    println!("Hello, world!");
+    let env = env::get_env().unwrap();
+    println!("Discord token: {}", env.discord_token);
 }
